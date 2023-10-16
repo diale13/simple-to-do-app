@@ -16,6 +16,15 @@ type Task struct {
 	Done bool   `json: "done"`
 }
 
+type CreateTaskBody struct {
+	Name string `json: "name"`
+}
+
+type UpdateTaskBody struct {
+	Name *string `json: "name"`
+	Done *bool   `json: "done"`
+}
+
 func tasks(w http.ResponseWriter, r *http.Request) {
 	jsonFile, err := os.ReadFile(JSONFilePath)
 	if err != nil {
