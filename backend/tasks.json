@@ -1,0 +1,7 @@
+[
+    {"id": 1, "name": "Wash The Dishes", "done": "false"},
+    {"id": 2, "name": "Buy Groceries", "done": "true"},
+    {"id": 3, "name": "Walk the Dog", "done": "false"},
+    {"id": 4, "name": "Finish React Component", "done": "false"},
+    {"id": 5, "name": "Write Golang API", "done": "true"}
+]
