@@ -25,7 +25,7 @@ type UpdateTaskBody struct {
 	Done *bool   `json: "done"`
 }
 
-func tasks(w http.ResponseWriter, r *http.Request) {
+func getTasksFromJson(w http.ResponseWriter, r *http.Request) {
 	jsonFile, err := os.ReadFile(JSONFilePath)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
