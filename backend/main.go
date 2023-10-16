@@ -25,8 +25,9 @@ func main() {
 
 	r.Use(middleware.Logger)
 	r.Use(JSONMiddleware)
+
+	printMonkeyLogo()
 	r.Get("/", func(w http.ResponseWriter, _ *http.Request) {
-		printMonkeyLogo()
 		w.Write([]byte("Hello World!"))
 	})
 	r.Get("/api/tasks", getTasksFromJson)
