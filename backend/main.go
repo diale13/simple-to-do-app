@@ -35,14 +35,14 @@ func main() {
 	r.Put("/api/tasks/{taskId}", updateTasks)
 	r.Delete("/api/tasks/{taskId}", deleteTask)
 
-	// Wrap your router with the CORS handler
+	// Wrap router with the CORS handler
 	handler := c.Handler(r)
 
 	done := make(chan os.Signal, 1)
 	signal.Notify(done, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)
 
 	go func() {
-		// Start your server with the CORS-wrapped router
+		// Start server with the CORS-wrapped router
 		http.ListenAndServe("localhost:9000", handler)
 	}()
 
