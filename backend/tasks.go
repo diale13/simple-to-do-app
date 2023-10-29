@@ -11,9 +11,9 @@ const (
 )
 
 type Task struct {
-	ID   int    `json: "id"`
-	Name string `json: "name"`
-	Done bool   `json: "done"`
+	ID   int    `json:"id"`
+	Name string `json:"name"`
+	Done bool   `json:"done"`
 }
 
 type CreateTaskBody struct {

@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./src/**/*.svelte"],
   theme: {
     extend: {},
   },
   plugins: [require("@tailwindcss/forms")],
-}
-
+};

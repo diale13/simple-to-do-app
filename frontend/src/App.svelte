@@ -1,5 +1,5 @@
 <script>
-  import Tasks from "./components/tasks.svelte";
+  import Tasks from "./components/Tasks.svelte";
 </script>
 
 <main>

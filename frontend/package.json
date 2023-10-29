@@ -1,5 +1,5 @@
 {
-  "name": "monkeytodo",
+  "name": "snappytodo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^2.4.2",
-    "@tailwindcss/forms": "^0.5.6",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
-    "svelte": "^4.0.5",
-    "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "@sveltejs/vite-plugin-svelte": "^1.0.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.16",
+    "svelte": "^3.49.0",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.0"
   }
 }
